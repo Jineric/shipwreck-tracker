@@ -15,13 +15,13 @@ public class Shipwreck {
 	String description;
 	String condition;
 	Integer depth;
-	Double latitude;
-	Double longitude;
+	String latitude;
+	String longitude;
 	Integer yearDiscovered;
 
 	public Shipwreck() { }
 
-	public Shipwreck(Long id, String name, String description, String condition, Integer depth, Double latitude, Double longitude, Integer yearDiscovered) {
+	public Shipwreck(Long id, String name, String description, String condition, Integer depth, String latitude, String longitude, Integer yearDiscovered) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
@@ -72,19 +72,19 @@ public class Shipwreck {
 		this.depth = depth;
 	}
 
-	public Double getLatitude() {
+	public String getLatitude() {
 		return latitude;
 	}
 
-	public void setLatitude(Double latitude) {
+	public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
-	public Double getLongitude() {
+	public String getLongitude() {
 		return longitude;
 	}
 
-	public void setLongitude(Double longitude) {
+	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
